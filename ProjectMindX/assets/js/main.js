@@ -12,8 +12,8 @@ fetch("footer.html")
   });
 // Scroll Header
 window.addEventListener("scroll", function () {
-  var header = document.querySelector(".scroll-header");
-  var scrollPosition = window.scrollY;
+  let header = document.querySelector(".scroll-header");
+  let scrollPosition = window.scrollY;
   if (scrollPosition > 0) {
     header.classList.add("header-background");
   } else {
@@ -22,11 +22,15 @@ window.addEventListener("scroll", function () {
 });
 
 // Header toggle
-var MenuBtn = document.getElementById("MenuBtn");
+let menuBtn = document.getElementById("MenuBtn");
 
-MenuBtn.addEventListener("click", function (e) {
-  document.querySelector("body").classList.toggle("mobile-nav-active");
-  this.classList.toggle("fa-xmark");
+menuBtn.addEventListener("click", function () {
+  document.querySelector("body").classList.add("mobile-nav-active");
+});
+let closeMenuBtn = document.getElementById("CloseBtn");
+
+closeMenuBtn.addEventListener("click", function () {
+  document.querySelector("body").classList.remove("mobile-nav-active");
 });
 
 // Typing Effect
@@ -38,4 +42,3 @@ MenuBtn.addEventListener("click", function (e) {
 //   backDelay: 2000,
 //   loop: true,
 // });
-
