@@ -16,7 +16,7 @@ li {
   list-style: none;
 }
 hr {
-  width: 100%;
+  width: 80%;
   margin: 20px auto;
   border: 1px solid rgb(230, 208, 208);
 }
@@ -265,10 +265,11 @@ footer {
 }
 
 .box-services .icon {
+  position: absolute;
+  top: 20px;
   font-size: 36px;
   padding: 40px 20px;
   border-radius: 4px;
-  position: relative;
   margin-bottom: 25px;
   display: inline-block;
   line-height: 0;
@@ -276,10 +277,16 @@ footer {
 }
 
 .box-services h3 {
+  position: absolute;
+  top: 120px;
   color: #444444;
   font-weight: 700;
 }
-
+.box-services p {
+  width: 70%;
+  position: absolute;
+  top: 150px;
+}
 .box-services .read-more {
   position: absolute;
   font-weight: 600;
@@ -300,7 +307,9 @@ footer {
   color: #2db6fa;
   background: rgba(144, 204, 232, 0.627);
 }
-
+.container-services .box-services.blue .icon:hover {
+  background: #ffffffef;
+}
 /* Orange Box */
 .container-services .box-services.orange {
   border-bottom: 3px solid #f68c09;
@@ -312,7 +321,9 @@ footer {
   color: #f68c09;
   background: #f0c896c4;
 }
-
+.container-services .box-services.orange .icon:hover {
+  background: #ffffffef;
+}
 /* Green Box */
 .container-services .box-services.green {
   border-bottom: 3px solid #08da4e;
@@ -324,7 +335,9 @@ footer {
   color: #08da4e;
   background: rgba(115, 227, 154, 0.687);
 }
-
+.container-services .box-services.green .icon:hover {
+  background: #ffffffef;
+}
 /* Red Box */
 .container-services .box-services.red {
   border-bottom: 3px solid #e9222c;
@@ -335,6 +348,9 @@ footer {
 .container-services .box-services.red .icon {
   color: #e9222c;
   background: #f17a8cb8;
+}
+.container-services .box-services.red .icon:hover {
+  background: #ffffffef;
 }
 /* Purple Box */
 .container-services .box-services.purple {
@@ -347,6 +363,9 @@ footer {
   color: #b50edf;
   background: #b954d275;
 }
+.container-services .box-services.purple .icon:hover {
+  background: #ffffffef;
+}
 /* Pink Box */
 .container-services .box-services.pink {
   border-bottom: 3px solid #f51f9c;
@@ -358,7 +377,9 @@ footer {
   color: #f51f9c;
   background: #e45fb1a8;
 }
-
+.container-services .box-services.pink .icon:hover {
+  background: #ffffffef;
+}
 @media screen and (max-width: 1200px) {
   .container-header {
     justify-content: space-between;
@@ -445,43 +466,92 @@ footer {
   }
 
   /* reponsive services */
-  .title-services{
-    display:none;
+  .title-services {
+    display: none;
   }
   #services .container-services {
     max-width: 1320px;
     margin-top: 30px;
     width: 100%;
-    display: grid;  
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
     align-items: center;
     justify-content: space-between;
-    height: 500px;
-    margin-bottom: 200px;
+    height: 700px;
   }
 }
 
 @media screen and (max-width: 1024px) {
+  .container-home {
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+
+  #home .container-home .home-get-started {
+    width: 80%;
+  }
+  #home .container-home .home-get-started h1 {
+    font-size: 46px;
+  }
+  #home .container-home .home-get-started .get-started-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #home .container-home .home-img {
+    margin-top: 20px;
+    width: 80%;
+  }
+
   #services .container-services {
-    max-width: 1320px;
     margin-top: 30px;
     width: 80%;
-    display: grid;  
+    display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
+    grid-gap: 100px;
     align-items: center;
     justify-content: space-between;
-    height: 500px;
-    margin-bottom: 200px;
+    height: 120vh;
+  }
+  .box-services p {
+    width: 80%;
+    margin-top: 5px;
+  }
+
+  .container-footer {
+    width: 80%;
+  }
+  .container-footer h4 {
+    font-size: 18px;
   }
   .footer-top {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 30px;
   }
   #services {
-    height: 170vh;
+    height: 150vh;
+  }
+  .icon-info {
+    margin-top: 20px;
+    font-size: 24px;
+    text-align: center;
+  }
+  .footer-services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-services ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-links,
+  .footer-contact {
+    margin-left: 24px;
   }
 }
-
