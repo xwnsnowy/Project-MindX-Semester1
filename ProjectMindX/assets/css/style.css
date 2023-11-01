@@ -230,19 +230,10 @@ footer {
   margin-top: 25px;
 }
 
-#services .title-services h2 {
-  font-size: 13px;
-  letter-spacing: 1px;
-  font-weight: 700;
-  margin: 0;
-  color: #4154f1;
-  text-transform: uppercase;
-}
-
 #services .title-services p {
   margin-top: 10px;
   padding: 0;
-  font-size: 38px;
+  font-size: 32px;
   line-height: 42px;
   font-weight: 700;
   color: #012970;
@@ -295,6 +286,7 @@ footer {
   font-size: 16px;
   padding: 8px 20px;
   bottom: 0;
+  padding-bottom: 20px;
 }
 /* Blue Box */
 .container-services .box-services.blue {
@@ -366,7 +358,8 @@ footer {
   color: #f51f9c;
   background: #e45fb1a8;
 }
-@media screen and (max-width: 1024px) {
+
+@media screen and (max-width: 1200px) {
   .container-header {
     justify-content: space-between;
   }
@@ -450,4 +443,45 @@ footer {
     color: #fff;
     transition: 0.3;
   }
+
+  /* reponsive services */
+  .title-services{
+    display:none;
+  }
+  #services .container-services {
+    max-width: 1320px;
+    margin-top: 30px;
+    width: 100%;
+    display: grid;  
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    height: 500px;
+    margin-bottom: 200px;
+  }
 }
+
+@media screen and (max-width: 1024px) {
+  #services .container-services {
+    max-width: 1320px;
+    margin-top: 30px;
+    width: 80%;
+    display: grid;  
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    height: 500px;
+    margin-bottom: 200px;
+  }
+  .footer-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+  }
+  #services {
+    height: 170vh;
+  }
+}
+
