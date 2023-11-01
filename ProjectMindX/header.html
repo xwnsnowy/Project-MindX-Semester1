@@ -64,6 +64,13 @@
         dropdownMenu.style.display = "none";
       }
     });
+    window.addEventListener("resize", function () {
+      if (window.innerWidth > 1024) {
+        dropdownMenu.style.display = "none";
+        menuBtnIcon.classList.remove("fa-xmark");
+        menuBtnIcon.classList.add("fa-bars");
+      }
+    });
   </script>
 </body>
 
