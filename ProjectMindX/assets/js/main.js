@@ -1,15 +1,14 @@
-// Sử dụng JavaScript để nạp header và footer
-fetch("header.html")
-  .then((response) => response.text())
-  .then((data) => {
-    document.getElementById("header").innerHTML = data;
-  });
+// fetch("header.html")
+//   .then((response) => response.text())
+//   .then((data) => {
+//     document.getElementById("header").innerHTML = data;
+//   });
 
-fetch("footer.html")
-  .then((response) => response.text())
-  .then((data) => {
-    document.getElementById("footer").innerHTML = data;
-  });
+// fetch("footer.html")
+//   .then((response) => response.text())
+//   .then((data) => {
+//     document.getElementById("footer").innerHTML = data;
+//   });
 // Scroll Header
 window.addEventListener("scroll", function () {
   let header = document.querySelector(".scroll-header");
@@ -22,16 +21,6 @@ window.addEventListener("scroll", function () {
 });
 
 // Header toggle
-let menuBtn = document.getElementById("MenuBtn");
-
-menuBtn.addEventListener("click", function () {
-  document.querySelector("body").classList.add("mobile-nav-active");
-});
-let closeMenuBtn = document.getElementById("CloseBtn");
-
-closeMenuBtn.addEventListener("click", function () {
-  document.querySelector("body").classList.remove("mobile-nav-active");
-});
 
 // Typing Effect
 

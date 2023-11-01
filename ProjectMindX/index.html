@@ -13,33 +13,41 @@
   <!-- Header Start -->
   <div id="header"></div>
   <!-- Header End -->
-    <!-- Home Section Start -->
-    <section id="home">
-      <div class="container-home">
-        <div class="home-get-started">
-          <h1>We offer modern solutions for growing your business</h1>
-          <span>We are team of talented designers making websites with Bootstrap</span>
-          <div class="get-started-home">
-            <a href="about.html">Get Started <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-              </svg></a>
-          </div>
-        </div>
-
-        <div class="home-img">
-          <img src="./assets/img/logo-home.png" alt="logo-home">
+  <!-- Home Section Start -->
+  <section id="home">
+    <div class="container-home">
+      <div class="home-get-started">
+        <h1>We offer modern solutions for growing your business</h1>
+        <span>We are team of talented designers making websites with Bootstrap</span>
+        <div class="get-started-home">
+          <a href="about.html">Get Started <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+              fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+            </svg></a>
         </div>
       </div>
-    </section>
-    <!-- Home Section End -->
+
+      <div class="home-img">
+        <img src="./assets/img/logo-home.png" alt="logo-home">
+      </div>
+    </div>
+  </section>
+  <!-- Home Section End -->
   <hr>
 
   <!-- Footer Start-->
   <div id="footer"></div>
   <!-- Footer End-->
-
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+    </script>
+  <script>
+    $(function () {
+      $("#header").load("header.html");
+      $("#footer").load("footer.html");
+    });
+  </script>
   <!-- Type.JS File for typing Effect -->
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
   <!-- Main JS File -->

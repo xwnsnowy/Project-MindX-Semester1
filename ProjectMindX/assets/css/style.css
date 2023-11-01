@@ -107,7 +107,9 @@ body {
   font-size: 18px;
   transition: 0.4s;
 }
-
+.dropdown-menu {
+  display: none;
+}
 .get-started-nav {
   margin-right: 20px;
   color: white;
@@ -221,6 +223,14 @@ footer {
   }
   #MenuBtn {
     display: block;
+    position: absolute;
+    cursor: pointer;
+    top: 35px;
+    font-size: 25px;
+    right: 40px;
+  }
+  .fa-xmark {
+    color: white;
   }
   .mobile-nav-active header {
     left: 0;
@@ -228,7 +238,65 @@ footer {
   nav {
     margin-right: 10px;
   }
-  #MenuBtn {
-    cursor: pointer;
+
+  .dropdown-menu {
+    display: none;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(50, 15, 107, 0.655);
+    transition: 0.3s;
+  }
+
+  .dropdown-menu ul {
+    position: absolute;
+    top: 75px;
+    bottom: 40px;
+    right: 25px;
+    left: 25px;
+    padding: 10px 0;
+    border-radius: 10px;
+    background-color: #fff;
+    overflow-y: auto;
+    transition: 0.3s;
+  }
+
+  .dropdown-menu ul li {
+    margin: 20px;
+  }
+
+  .get-started-nav-mobile {
+    color: white;
+    border-radius: 10px;
+    background-color: #013289;
+  }
+
+  .get-started-nav-mobile:focus {
+    background: #4154f1;
+    padding: 4px;
+    margin: 10px;
+    border-radius: 10px;
+    color: #fff;
+  }
+
+  .dropdown-menu ul li a,
+  .dropdown-menu ul li a:focus {
+    display: flex;
+    padding: 10px 0 10px 30px;
+    font-size: 14px;
+    font-weight: 700;
+    white-space: nowrap;
+    transition: 0.3s;
+  }
+
+  .dropdown-menu ul li a:hover {
+    background: #4154f1;
+    border-radius: 10px;
+    margin: 20px;
+    color: #fff;
+    transition: 0.3;
   }
 }

@@ -20,7 +20,7 @@
       <div class="header-with-navbar">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="#">Services</a></li>
           <li><a href="#">Team</a></li>
           <li><a href="#">Blog</a></li>
@@ -28,11 +28,43 @@
           <li><a href="about.html" class="get-started-nav">Get Started</a></li>
         </ul>
       </div>
-      <nav> <i class="fa-solid fa-bars" id="MenuBtn"></i></nav>
+      <div class="dropdown-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="about.html" class="get-started-nav-mobile">Get Started</a></li>
+        </ul>
+      </div>
+      <nav class="toggleBtn"> <i class="fa-solid fa-bars" id="MenuBtn"></i></nav>
+
     </div>
   </header>
-
   <!-- Mobile Nav Toogle -->
+  <script>// Header toggle
+    const dropdownMenu = document.querySelector(".dropdown-menu");
+    const toggleBtn = document.querySelector(".toggleBtn");
+    const menuBtnIcon = document.querySelector("#MenuBtn");
+
+    toggleBtn.addEventListener("click", function () {
+      if (menuBtnIcon.classList.contains("fa-bars")) {
+        menuBtnIcon.classList.remove("fa-bars");
+        menuBtnIcon.classList.add("fa-xmark");
+      } else {
+        menuBtnIcon.classList.remove("fa-xmark");
+        menuBtnIcon.classList.add("fa-bars");
+      }
+
+      if (dropdownMenu.style.display === "none" || dropdownMenu.style.display === "") {
+        dropdownMenu.style.display = "block";
+      } else {
+        dropdownMenu.style.display = "none";
+      }
+    });
+  </script>
 </body>
 
 </html>
