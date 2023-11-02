@@ -485,7 +485,7 @@ footer {
 @media screen and (max-width: 1024px) {
   .container-home {
     flex-direction: column;
-    margin-bottom: 100px;
+    margin-bottom: 120px;
   }
 
   #home .container-home .home-get-started {
@@ -500,7 +500,7 @@ footer {
     justify-content: center;
   }
   #home .container-home .home-img {
-    margin-top: 20px;
+    margin-top: 40px;
     width: 80%;
   }
 
@@ -528,6 +528,7 @@ footer {
   .footer-top {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 10px;
   }
   #services {
     height: 150vh;
@@ -553,5 +554,26 @@ footer {
   .footer-links,
   .footer-contact {
     margin-left: 24px;
+  }
+}
+@media screen and (max-width: 800px) {
+  #home {
+    padding: 100px 0;
+  }
+  #home .container-home .home-get-started {
+    width: 80%;
+    text-align: center;
+  }
+  #home .container-home .home-get-started h1 {
+    font-size: 34px;
+  }
+  #home .container-home .home-get-started span {
+    font-size: 22px;
+  }
+  .footer-top {
+    gap: 5px;
+  }
+  .icon-info {
+    font-size: 30px;
   }
 }
