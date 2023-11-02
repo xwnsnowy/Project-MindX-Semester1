@@ -247,11 +247,14 @@ footer {
   text-align: center;
 }
 #services .title-services {
+  opacity: 0;
+  transform: translateY(-80px);
+  transition: 2s;
   margin-top: 25px;
 }
 
 #services .title-services p {
-  padding-top: 50px;
+  padding-top: 80px;
   font-size: 32px;
   line-height: 42px;
   font-weight: 700;
@@ -259,14 +262,15 @@ footer {
 }
 #services .container-services {
   max-width: 1320px;
-  margin-top: 30px;
+  margin: 30px 0;
   width: 90%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 3fr 3fr;
   grid-gap: 10px;
   align-items: center;
   justify-content: space-between;
-  height: 700px;
+  height: 750px;
 }
 
 .box-services {
@@ -312,12 +316,17 @@ footer {
 }
 /* Blue Box */
 .container-services .box-services.blue {
+  opacity: 0;
+  transform: translateY(170px);
+  transition: opacity 2s, transform 2s;
   border-bottom: 3px solid #2db6fa;
-  transition: background-color 0.3s ease;
+  backface-visibility: hidden;
+  perspective: 1000px;
 }
 .container-services .box-services.blue:hover {
   color: var(--textServicesHover);
   background-color: #2db6fa;
+  transform: translateY(0);
 }
 .container-services .box-services.blue .icon {
   color: #2db6fa;
@@ -328,10 +337,16 @@ footer {
 }
 /* Orange Box */
 .container-services .box-services.orange {
+  opacity: 0;
+  transform: translateY(180px);
+  transition: opacity 2.5s, transform 2.5s;
   border-bottom: 3px solid #f68c09;
+  backface-visibility: hidden;
+  perspective: 1000px;
 }
 .container-services .box-services.orange:hover {
   color: var(--textServicesHover);
+  transform: translateY(0);
   background-color: #f68c09;
 }
 .container-services .box-services.orange .icon {
@@ -343,11 +358,15 @@ footer {
 }
 /* Green Box */
 .container-services .box-services.green {
+  opacity: 0;
+  transform: translateY(190px);
+  transition: opacity 3s, transform 3s;
   border-bottom: 3px solid #08da4e;
 }
 .container-services .box-services.green:hover {
   color: var(--textServicesHover);
   background-color: #08da4e;
+  transform: translateY(0);
 }
 .container-services .box-services.green .icon {
   color: #08da4e;
@@ -358,11 +377,15 @@ footer {
 }
 /* Red Box */
 .container-services .box-services.red {
+  opacity: 0;
+  transform: translateY(170px);
+  transition: opacity 3.3s, transform 3.3s;
   border-bottom: 3px solid #e9222c;
 }
 .container-services .box-services.red:hover {
   color: var(--textServicesHover);
   background-color: #e9222c;
+  transform: translateY(0);
 }
 .container-services .box-services.red .icon {
   color: #e9222c;
@@ -373,11 +396,15 @@ footer {
 }
 /* Purple Box */
 .container-services .box-services.purple {
+  opacity: 0;
+  transform: translateY(180px);
+  transition: opacity 3.7s, transform 3.7s;
   border-bottom: 3px solid #b50edf;
 }
 .container-services .box-services.purple:hover {
   color: var(--textServicesHover);
   background-color: #b50edf;
+  transform: translateY(0);
 }
 .container-services .box-services.purple .icon {
   color: #b50edf;
@@ -388,11 +415,15 @@ footer {
 }
 /* Pink Box */
 .container-services .box-services.pink {
+  opacity: 0;
+  transform: translateY(190px);
+  transition: opacity 4s, transform 4s;
   border-bottom: 3px solid #f51f9c;
 }
 .container-services .box-services.pink:hover {
   color: var(--textServicesHover);
   background-color: #f51f9c;
+  transform: translateY(0);
 }
 .container-services .box-services.pink .icon {
   color: #f51f9c;
@@ -493,6 +524,7 @@ footer {
     display: none;
   }
   #services .container-services {
+    margin-top: 100px;
     width: 95%;
   }
 }
@@ -523,9 +555,9 @@ footer {
     height: 140vh;
   }
   #services .container-services {
-    padding: 60px 0;
     width: 85%;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 2fr 2fr;
     grid-gap: 30px;
     height: 130vh;
   }
@@ -579,6 +611,7 @@ footer {
   #services .container-services {
     width: 65%;
     grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 30px;
     height: 230vh;
   }
@@ -614,7 +647,7 @@ footer {
   .footer-top {
     text-align: center;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 20px;
   }
   .icon-info {
