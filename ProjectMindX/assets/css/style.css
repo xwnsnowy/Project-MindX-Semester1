@@ -628,7 +628,6 @@ footer {
   #services .container-services {
     width: 65%;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 30px;
     height: 230vh;
   }
@@ -682,7 +681,7 @@ footer {
   .footer-top {
     text-align: center;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 20px;
   }
   .icon-info {
