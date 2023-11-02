@@ -323,45 +323,60 @@ footer {
   justify-content: center;
   text-align: center;
 }
+.wrapper-team {
+  display: flex;
+  flex-direction: column;
+}
 #team .title-team {
+  padding-top: 60px;
   opacity: 1;
-  transform: translateY(-80px);
-  transition: 2s;
-  margin-top: 25px;
+  /* transform: translateY(-80px);
+  transition: 2s; */
 }
 
 #team .title-team p {
-  padding-top: 80px;
-  font-size: 32px;
-  line-height: 42px;
+  font-size: 36px;
   font-weight: 700;
   color: #012970;
 }
 
-#team .container-team {
+#team .wrapper-member-team {
   max-width: 1320px;
-  margin: 30px 0;
-  width: 90%;
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 4fr;
   grid-gap: 10px;
   align-items: center;
   justify-content: space-between;
-  height: 550px;
+  height: 600px;
 }
 
-.box-team {
-  position: relative;
+.member-team {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
-  height: 100%;
-  padding: 60px 10px;
   transition: 0.3s;
   border-radius: 5px;
+}
+.member-team img {
+  max-width: 100%;
+}
+.member-img {
+  position: relative;
+}
+.member-img:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background: url(../img/team-shape.svg) no-repeat center bottom;
+  background-size: contain;
+  z-index: 1;
 }
 /*
 .box-services .icon {
@@ -407,9 +422,7 @@ footer {
   background-color: #2db6fa;
   transform: translateY(0);
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
-  transition: transform 0.3s, box-shadow 0.3s;
-  transform-origin: center;
-  transform: scale(1.05);
+  transition: transform 0.6s, box-shadow 0.6s;
 }
 .container-services .box-services.blue .icon {
   color: #2db6fa;
@@ -432,9 +445,7 @@ footer {
   transform: translateY(0);
   background-color: #f68c09;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
-  transition: transform 0.3s, box-shadow 0.3s;
-  transform-origin: center;
-  transform: scale(1.05);
+  transition: transform 0.6s, box-shadow 0.6s;
 }
 .container-services .box-services.orange .icon {
   color: #f68c09;
@@ -455,9 +466,7 @@ footer {
   background-color: #08da4e;
   transform: translateY(0);
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
-  transition: transform 0.3s, box-shadow 0.3s;
-  transform-origin: center;
-  transform: scale(1.05);
+  transition: transform 0.6s, box-shadow 0.6s;
 }
 .container-services .box-services.green .icon {
   color: #08da4e;
@@ -478,9 +487,7 @@ footer {
   background-color: #e9222c;
   transform: translateY(0);
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
-  transition: transform 0.3s, box-shadow 0.3s;
-  transform-origin: center;
-  transform: scale(1.05);
+  transition: transform 0.6s, box-shadow 0.6s;
 }
 .container-services .box-services.red .icon {
   color: #e9222c;
@@ -501,9 +508,7 @@ footer {
   background-color: #b50edf;
   transform: translateY(0);
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
-  transition: transform 0.3s, box-shadow 0.3s;
-  transform-origin: center;
-  transform: scale(1.05);
+  transition: transform 0.6s, box-shadow 0.6s;
 }
 .container-services .box-services.purple .icon {
   color: #b50edf;
@@ -524,9 +529,7 @@ footer {
   background-color: #f51f9c;
   transform: translateY(0);
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
-  transition: transform 0.3s, box-shadow 0.3s;
-  transform-origin: center;
-  transform: scale(1.05);
+  transition: transform 0.6s, box-shadow 0.6s;
 }
 .container-services .box-services.pink .icon {
   color: #f51f9c;

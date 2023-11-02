@@ -53,25 +53,29 @@
   <!-- Main JS File -->
   <script src="./assets/js/main.js"></script>
   <script src="./assets/js/headerscroll.js"></script>
-  <script>const h1HomeGetStarted = document.querySelector(
-      "#home .container-home .home-get-started h1"
-    );
-    h1HomeGetStarted.style.opacity = 1;
-    h1HomeGetStarted.style.transform = "translateY(0)";
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const h1HomeGetStarted = document.querySelector(
+        "#home .container-home .home-get-started h1"
+      );
+      h1HomeGetStarted.style.opacity = 1;
+      h1HomeGetStarted.style.transform = "translateY(0)";
 
-    const spanHomeGetStarted = document.querySelector(
-      "#home .container-home .home-get-started span"
-    );
-    spanHomeGetStarted.style.opacity = 1;
-    spanHomeGetStarted.style.transform = "translateY(0)";
+      const spanHomeGetStarted = document.querySelector(
+        "#home .container-home .home-get-started span"
+      );
+      spanHomeGetStarted.style.opacity = 1;
+      spanHomeGetStarted.style.transform = "translateY(0)";
 
-    const getStartedHome = document.querySelector(".get-started-home");
-    getStartedHome.style.opacity = 1;
-    getStartedHome.style.transform = "translateY(0)";
+      const getStartedHome = document.querySelector(".get-started-home");
+      getStartedHome.style.opacity = 1;
+      getStartedHome.style.transform = "translateY(0)";
 
-    const imgHome = document.querySelector(".home-img");
-    imgHome.style.opacity = 1;
-    imgHome.style.transform = "translateY(0)";</script>
+      const imgHome = document.querySelector(".home-img");
+      imgHome.style.opacity = 1;
+      imgHome.style.transform = "translateY(0)";
+    });
+  </script>
   <!-- FontAwesome JS File (Icon File) -->
   <script src="https://kit.fontawesome.com/05477a19da.js" crossorigin="anonymous"></script>
 </body>
