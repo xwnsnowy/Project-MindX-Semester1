@@ -911,7 +911,7 @@ footer {
     height: 150vh;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 2fr 2fr;
-    grid-gap: 70px;
+    grid-gap: 40px;
   }
   #team .title-team p {
     margin-top: 70px;
@@ -927,13 +927,13 @@ footer {
     padding: 80px 0;
   }
   #services {
-    height: 240vh;
+    height: 230vh;
   }
   #services .container-services {
     width: 65%;
     grid-template-columns: 1fr;
     grid-gap: 30px;
-    height: 230vh;
+    height: 225vh;
   }
   #home .container-home .home-get-started {
     width: 95%;
@@ -1022,19 +1022,18 @@ footer {
     justify-content: center;
   }
   #team {
-    height: 360vh;
+    height: 400vh;
   }
   #team .wrapper-member-team {
     width: 80%;
     margin-top: 25px;
-    height: 340vh;
+    height: 370vh;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-gap: 90px;
+    grid-gap: 50px;
   }
   #team .title-team p {
     font-size: 28px;
-    margin-top: 80px;
     margin-bottom: 0;
   }
   .member-info p {
