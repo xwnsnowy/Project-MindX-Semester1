@@ -172,22 +172,22 @@ body {
 #home .container-home .home-get-started h1 {
   opacity: 0;
   transform: translateX(40px);
-  transition: 2s;
+  transition: 3s;
   color: var(--textColor);
   font-weight: 600;
   font-size: 42px;
-  animation: appear 1s ease forwards;
+  animation: appear 3s ease forwards;
 }
 
 #home .container-home .home-get-started span {
   position: relative;
   opacity: 0;
   transform: translateY(60px);
-  transition: 2s;
+  transition: 3s;
   margin-top: 5px;
   color: #444444;
   font-size: 24px;
-  animation: appear 1s ease forwards;
+  animation: appear 3s ease forwards;
 }
 .typing-span-home {
   white-space: normal;
@@ -203,6 +203,7 @@ body {
   border-left: 2px solid #444444;
   animation: animate 4s steps(12) infinite;
 }
+
 .bootstrap-span {
   display: none;
 }
@@ -218,11 +219,20 @@ body {
 .get-started-home {
   opacity: 0;
   transform: translateY(80px);
-  transition: 2s;
+  transition: 3s;
   margin-top: 30px;
-  animation: appear 1s ease forwards;
+  animation: appear 3s ease forwards;
 }
-
+.get-started-home:hover a i {
+  transform: translateX(5px);
+}
+.fa-arrow-right {
+  font-size: 16px;
+  padding-left: 5px;
+}
+.get-started-home a {
+  margin-top: 2px;
+}
 .get-started-home a {
   color: white;
   line-height: 0;
@@ -478,6 +488,10 @@ footer {
 }
 .member-img .social i {
   font-size: 18px;
+}
+.member-img .social i:hover {
+  color: rgb(45, 41, 232);
+  transform: scale(1.2);
 }
 .member-img .social a {
   z-index: 2;
