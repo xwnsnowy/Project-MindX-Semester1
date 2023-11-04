@@ -20,7 +20,10 @@ hr {
   margin: 20px auto;
   border: 1px solid rgb(230, 208, 208);
 }
-
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
 /* Global Variables */
 :root {
   --textColor: #012970;
@@ -372,8 +375,8 @@ footer {
 
 #team .title-team p {
   opacity: 0;
-  margin: 10px 0 0 0;
-  padding: 0;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
   font-size: 38px;
   line-height: 42px;
   font-weight: 700;
@@ -385,14 +388,14 @@ footer {
 
 #team .wrapper-member-team {
   max-width: 1320px;
-  width: 95%;
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 4fr;
   grid-gap: 25px;
   align-items: center;
   justify-content: center;
-  height: 600px;
+  height: 550px;
 }
 
 .member-team {
@@ -404,6 +407,10 @@ footer {
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
   transition: 0.3s;
   border-radius: 5px;
+  height: 100%;
+}
+.member-team h4 {
+  white-space: nowrap;
 }
 
 .member-team.first {
@@ -470,6 +477,7 @@ footer {
 }
 .member-team img {
   max-width: 100%;
+  height: auto;
 }
 .member-img {
   position: relative;
@@ -526,7 +534,8 @@ footer {
 }
 .member-info p {
   font-style: italic;
-  font-size: 14px;
+  font-size: 13px;
+  font-weight: 500;
   padding-top: 15px;
   line-height: 26px;
   color: #5e5e5e;
@@ -800,7 +809,7 @@ footer {
   }
   #team .wrapper-member-team {
     max-width: 1200px;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
   }
 }
@@ -893,6 +902,24 @@ footer {
   .container-services .box-services.pink {
     transform: translateY(-70px);
   }
+
+  #team {
+    height: 180vh;
+  }
+  #team .wrapper-member-team {
+    margin-top: 25px;
+    height: 150vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 2fr;
+    grid-gap: 70px;
+  }
+  #team .title-team p {
+    margin-top: 70px;
+  }
+  .member-info p {
+    font-size: 16px;
+    font-weight: 400;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -945,7 +972,11 @@ footer {
   .icon-info {
     font-size: 30px;
   }
+  #team .title-team p {
+    font-size: 30px;
+  }
   #team .wrapper-member-team {
+    grid-gap: 25px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 2fr 2fr;
   }
@@ -989,5 +1020,25 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  #team {
+    height: 360vh;
+  }
+  #team .wrapper-member-team {
+    width: 80%;
+    margin-top: 25px;
+    height: 340vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 90px;
+  }
+  #team .title-team p {
+    font-size: 28px;
+    margin-top: 80px;
+    margin-bottom: 0;
+  }
+  .member-info p {
+    font-size: 16px;
+    font-weight: 400;
   }
 }
