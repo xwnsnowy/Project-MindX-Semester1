@@ -145,6 +145,7 @@ body {
 }
 
 #home .container-home {
+  padding: 20px;
   max-width: 1320px;
   width: 100%;
   display: flex;
@@ -163,7 +164,6 @@ body {
   opacity: 0;
   transform: translateX(80px);
   transition: 2s;
-  width: 50%;
   padding-left: 40px;
   display: flex;
   justify-content: center;
@@ -296,7 +296,7 @@ footer {
 }
 
 #services .title-services p {
-  padding-top: 80px;
+  padding-top: 90px;
   font-size: 32px;
   line-height: 42px;
   font-weight: 700;
@@ -304,7 +304,8 @@ footer {
 }
 #services .container-services {
   max-width: 1320px;
-  margin: 30px 0;
+  padding-top: 20px;
+  margin: 15px 0;
   width: 90%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -721,10 +722,18 @@ footer {
     top: 35px;
     font-size: 25px;
     right: 40px;
+    transition: transform 0.3s ease;
   }
+
+  #MenuBtn:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  }
+
   .bootstrap-span {
     display: contents;
   }
+
   .typing-span-home {
     display: none;
   }
@@ -867,6 +876,7 @@ footer {
     font-size: 24px;
     text-align: center;
   }
+
   .footer-services {
     display: flex;
     flex-direction: column;
@@ -1020,6 +1030,18 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  .footer-links h4 {
+    padding-bottom: 5px;
+  }
+  .footer-links ul li {
+    padding-bottom: 5px;
+  }
+  .footer-services h4 {
+    padding-bottom: 5px;
+  }
+  .footer-services ul li {
+    padding-bottom: 5px;
   }
   #team {
     height: 400vh;
