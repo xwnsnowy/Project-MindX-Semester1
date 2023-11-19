@@ -934,10 +934,11 @@ footer {
     padding-top: 120px;
   }
   #about {
-    height: 100vh;
-    padding-top: 150px;
+    min-height: 100vh;
+    padding-top: 200px;
     margin-bottom: 150px;
   }
+
   .container-home {
     flex-direction: column;
     margin-bottom: 120px;
@@ -1154,9 +1155,14 @@ footer {
 
 @media screen and (max-width: 550px) {
   #home {
-    height: 100vh;
+    min-height: 100vh;
     padding-top: 100px;
     margin-bottom: 50px;
+  }
+  #about {
+    min-height: 100vh;
+    padding-top: 0px;
+    margin-bottom: 0px;
   }
   .wrapper-about {
     margin-top: 50px;
