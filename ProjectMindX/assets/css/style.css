@@ -772,14 +772,14 @@ footer {
 
 #about .wrapper-about .img-about {
   opacity: 0;
-  transform: translateX(80px);
+  transform: translateX(40px);
   transition: 2s;
   padding-left: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  animation: appear 1s ease forwards;
+  animation: appear 2s ease forwards;
 }
 
 #about .wrapper-about .content-about h3 {
