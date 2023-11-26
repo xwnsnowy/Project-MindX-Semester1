@@ -153,6 +153,7 @@ body {
   justify-content: space-between;
 }
 #home .container-home .home-get-started {
+  flex: 1;
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -164,6 +165,7 @@ body {
   height: auto;
 }
 #home .container-home .home-img {
+  flex: 1;
   opacity: 0;
   transform: translateX(80px);
   transition: 2s;
@@ -181,7 +183,7 @@ body {
   transition: 3s;
   color: var(--textColor);
   font-weight: 600;
-  font-size: 42px;
+  font-size: 38px;
   animation: appear 3s ease forwards;
 }
 
@@ -192,7 +194,7 @@ body {
   transition: 3s;
   margin-top: 5px;
   color: #444444;
-  font-size: 24px;
+  font-size: 22px;
   animation: appear 3s ease forwards;
 }
 .typing-span-home {
@@ -813,6 +815,152 @@ footer {
   line-height: 24px;
   animation: appear 3s ease forwards;
 }
+
+#contact {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 50px;
+}
+#contact .title-contact {
+  opacity: 0;
+  transform: translateY(-80px);
+  transition: 2s;
+  margin-top: 25px;
+  animation: appear 1s ease forwards;
+}
+
+#contact .title-contact h3 {
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin: 0;
+  color: #4154f1;
+  text-transform: uppercase;
+}
+#contact .title-contact h1 {
+  margin: 10px 0 0 0;
+  padding: 0;
+  font-size: 38px;
+  line-height: 42px;
+  font-weight: 700;
+  color: #012970;
+}
+#contact .container-contact {
+  max-width: 1320px;
+  margin: 15px 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  height: 500px;
+}
+
+.wrapper-info-contact {
+  min-height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.box-contact {
+  color: #444444;
+  background: #fafbff;
+  padding: 30px;
+  text-align: left;
+}
+.box-contact i {
+  font-size: 38px;
+  line-height: 0;
+  color: #4154f1;
+}
+
+.box-contact h3 {
+  font-size: 18px;
+  color: #012970;
+  font-weight: 600;
+  margin: 20px 0 10px 0;
+}
+
+.box-contact p {
+  padding: 0;
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.form-contact {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form {
+  min-width: 100%;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 400px;
+}
+.form-first-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 10px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+textarea {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-message {
+  margin-left: 2px;
+  margin-top: 5px;
+  text-align: left;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: red;
+}
+
+.form-submit {
+  background: #4154f1;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-submit:hover {
+  background: #5969f3;
+}
 @media screen and (max-width: 1200px) {
   .container-header {
     justify-content: space-between;
@@ -864,7 +1012,9 @@ footer {
     background: rgba(50, 15, 107, 0.655);
     transition: 0.3s;
   }
-
+  #home .container-home .home-get-started h1 {
+    font-size: 32px;
+  }
   .dropdown-menu ul {
     position: absolute;
     top: 75px;
@@ -978,7 +1128,7 @@ footer {
     width: 80%;
   }
   #home .container-home .home-get-started h1 {
-    font-size: 46px;
+    font-size: 42px;
   }
   #home .container-home .home-get-started .get-started-home {
     display: flex;
