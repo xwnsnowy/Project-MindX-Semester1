@@ -861,20 +861,24 @@ footer {
   justify-content: space-between;
   height: 500px;
 }
-
-.wrapper-info-contact {
-  margin-top: 30px;
-  min-height: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-}
 .box-contact {
   color: #444444;
   background: #fafbff;
   padding: 30px;
   text-align: left;
 }
+.wrapper-info-contact {
+  margin-top: 30px;
+  min-height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  opacity: 0;
+  transform: translateX(-80px);
+  transition: 2s;
+  animation: appear 2s ease forwards;
+}
+
 .box-contact i {
   font-size: 38px;
   line-height: 0;
@@ -907,6 +911,10 @@ footer {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
   width: 400px;
+  opacity: 0;
+  transform: translateY(80px);
+  transition: 2s;
+  animation: appear 2s ease forwards;
 }
 .form-first-row {
   display: grid;
@@ -963,7 +971,7 @@ textarea {
   background: #5969f3;
 }
 #blog {
-  height: 400vh;
+  min-height: 410vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1015,10 +1023,9 @@ textarea {
 
 .breadcrumbs {
   width: 100%;
-  margin-top: 80px;
   padding: 15px 0;
   background: #012970;
-  min-height: 40px;
+  max-height: 100px;
   color: #fff;
 }
 .breadcrumbs ol a {
@@ -1034,6 +1041,7 @@ textarea {
 }
 .container-bc {
   margin: 0 auto;
+  padding: 0 10px;
   max-width: 1300px;
 }
 .breadcrumbs ol {
@@ -1256,8 +1264,18 @@ textarea {
   transition: 0.3s;
 }
 @media screen and (max-width: 1200px) {
+  .newsletter {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
   .container-header {
     justify-content: space-between;
+  }
+  .breadcrumbs {
+    margin-top: 90px;
+  }
+  .wrapper-blog {
+    width: 95%;
   }
   .header-with-navbar {
     display: none;
@@ -1530,7 +1548,35 @@ textarea {
     display: flex;
     flex-direction: column;
   }
+  #blog {
+    min-height: 470vh;
+  }
+  .wrapper-blog {
+    max-width: 976px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .content-blog {
+    width: 85%;
+  }
+  .sidebar-blog {
+    width: 85%;
+  }
+  .entry .entry-title a {
+    font-size: 22px;
+  }
+  .entry .entry-content p {
+    line-height: 20px;
+  }
 }
+@media screen and (max-width: 860px) {
+  .breadcrumbs {
+    margin-top: 100px;
+  }
+}
+
 @media screen and (max-width: 800px) {
   #home {
     height: 120vh;
