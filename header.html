@@ -5,10 +5,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    .active-click {
+      color: red;
+    }
+  </style>
+  <script>
+    const activePage = window.location.pathname;
+    console.log(activePage);
+    const navLinks = document.querySelectorAll('.header-with-navbar ul li a');
+
+    navLinks.forEach(link => {
+      if (link.href.endsWith(activePage)) {
+        link.classList.add('active-click');
+      }
+    });
+  </script>
 </head>
 
 <body>
-  <!-- test commit -->
   <header class="scroll-header">
     <div class="container-header">
       <div class="header-with-logo">
@@ -39,15 +54,13 @@
           <li><a href="contact.html">Contact</a></li>
           <li><a href="about.html" class="get-started-nav-mobile">Get Started</a></li>
         </ul>
-
       </div>
       <nav class="toggleBtn"> <i class="fa-solid fa-bars" id="MenuBtn"></i></nav>
-
     </div>
-
   </header>
-  <!-- Mobile Nav Toogle -->
-  <script>// Header toggle
+
+  <!-- Mobile Nav Toggle -->
+  <script>
     const dropdownMenu = document.querySelector(".dropdown-menu");
     const toggleBtn = document.querySelector(".toggleBtn");
     const menuBtnIcon = document.querySelector("#MenuBtn");
@@ -67,6 +80,7 @@
         dropdownMenu.style.display = "none";
       }
     });
+
     window.addEventListener("resize", function () {
       if (window.innerWidth > 1024) {
         dropdownMenu.style.display = "none";

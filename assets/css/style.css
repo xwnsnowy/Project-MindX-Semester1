@@ -234,6 +234,7 @@ body {
 .get-started-home:hover a i {
   transform: translateX(5px);
 }
+
 .read-more-about {
   opacity: 0;
   transform: translateY(80px);
@@ -862,6 +863,7 @@ footer {
 }
 
 .wrapper-info-contact {
+  margin-top: 30px;
   min-height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -983,6 +985,14 @@ textarea {
   align-items: center;
   border-radius: 4px;
   border: 1px solid #e1ecff;
+}
+.recent-posts h4 a {
+  color: #012970;
+  transition: 0.3s;
+}
+.recent-posts h4 a:hover {
+  color: #055cf2;
+  transition: 0.3s;
 }
 .newsletter form input[type="email"] {
   border-radius: 8px;
@@ -1511,6 +1521,16 @@ textarea {
   }
 }
 
+@media screen and (max-width: 976px) {
+  #contact {
+    height: 100vh;
+    margin-bottom: 400px;
+  }
+  #contact .container-contact {
+    display: flex;
+    flex-direction: column;
+  }
+}
 @media screen and (max-width: 800px) {
   #home {
     height: 120vh;
